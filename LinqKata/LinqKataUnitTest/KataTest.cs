@@ -136,7 +136,7 @@ namespace LinqKataUnitTest
             var result = Kata.GetMaxPriceByMark(cars);
 
             Check.That(result.Extracting(r => r.Mark)).Contains("Peugeot", "Citroen");
-            Check.That(result.Extracting(r => r.Price)).Contains(1_500, 900);
+            Check.That(result.Extracting(r => r.Price)).Contains(1_500, 1_000);
         }
 
         [Fact]
