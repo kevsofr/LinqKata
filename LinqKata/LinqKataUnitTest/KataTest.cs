@@ -83,7 +83,7 @@ namespace LinqKataUnitTest
         }
 
         [Fact]
-        public void Should_Pass_GetMaxPriceByMark_()
+        public void Should_Pass_GetMergeAnalyses()
         {
             var equities = new List<Equity>
             {
@@ -146,7 +146,12 @@ namespace LinqKataUnitTest
 
             var result = Kata.GetDictionary(input);
 
-            Check.That(result).Contains(("Red", 3), ("Green", 2), ("Orange", 2), ("Blue", 1), ("Pink", 1));
+            Check.That(result).Contains(
+                KeyValuePair.Create("Red", 3),
+                KeyValuePair.Create("Green", 2),
+                KeyValuePair.Create("Orange", 2),
+                KeyValuePair.Create("Blue", 1),
+                KeyValuePair.Create("Pink", 1));
         }
     }
 }

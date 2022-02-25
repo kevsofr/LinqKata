@@ -21,10 +21,4 @@
         public string EquityCode { get; set; } = string.Empty;
         public string BondCode { get; set; } = string.Empty;
     }
-
-    public class Instrument
-    {
-        public string Code { get; set; } = string.Empty;
-        public int Value { get; set; }
-    }
 }
