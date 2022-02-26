@@ -42,7 +42,7 @@ namespace LinqKataUnitTest
                 new Car
                 {
                     Mark = "Peugeot",
-                    Price = 900
+                    Price = 1_500
                 },
                 new Car
                 {
@@ -52,7 +52,7 @@ namespace LinqKataUnitTest
                 new Car
                 {
                     Mark = "Peugeot",
-                    Price = 1_500
+                    Price = 900
                 }
             };
 
@@ -142,7 +142,7 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_GetDictionary()
         {
-            var input = new[] {"Red", "Green", "Red", "Red", "Orange", "Blue", "Green", "Orange", "Pink"};
+            var input = new[] { "Red", "Green", "Red", "Red", "Orange", "Blue", "Green", "Orange", "Pink" };
 
             var result = Kata.GetDictionary(input);
 
