@@ -65,11 +65,11 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_GetFrom4To6()
         {
-            var input = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var input = new[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 
             var result = Kata.GetFrom4To6(input);
 
-            Check.That(result).ContainsExactly(4, 5, 6);
+            Check.That(result).ContainsExactly("4", "5", "6");
         }
 
         [Fact]
