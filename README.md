@@ -1,2 +1,2 @@
 # LinqKata
-Some Linq Kata
+Some Linq Katas
