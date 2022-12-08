@@ -20,7 +20,7 @@
             throw new NotImplementedException();
         }
 
-        public static IEnumerable<int> GetFrom4To6(IEnumerable<string> input)
+        public static IEnumerable<string> GetFrom4To6(IEnumerable<string> input)
         {
             throw new NotImplementedException();
         }

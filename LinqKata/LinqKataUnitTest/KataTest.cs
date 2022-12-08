@@ -22,11 +22,11 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_Flat()
         {
-            var input = new List<IEnumerable<int>>
+            var input = new int[][]
             {
-                new []{ 1, 2, 3 },
-                new []{ 4, 5, 6 },
-                new []{ 7, 8, 9 },
+                new[] { 1, 2, 3 },
+                new[] { 4, 5, 6 },
+                new[] { 7, 8, 9 }
             };
 
             var result = Kata.Flat(input);
@@ -37,7 +37,7 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_OrderByMarkAndPrice()
         {
-            var cars = new []
+            var cars = new[]
             {
                 new Car
                 {
@@ -85,7 +85,7 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_GetMergeAnalyses()
         {
-            var equities = new List<Equity>
+            var equities = new[]
             {
                 new Equity
                 {
@@ -96,8 +96,8 @@ namespace LinqKataUnitTest
                     Code = "BNP FP"
                 }
             };
-            
-            var bonds = new List<Bond>
+
+            var bonds = new[]
             {
                 new Bond
                 {
@@ -114,7 +114,7 @@ namespace LinqKataUnitTest
         [Fact]
         public void Should_Pass_GetMaxPriceByMark()
         {
-            var cars = new List<Car>
+            var cars = new[]
             {
                 new Car
                 {
