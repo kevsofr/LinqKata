@@ -10,9 +10,9 @@ public class KataTest
     [Fact]
     public void Should_Pass_GetMaxAverage()
     {
-        var input1 = new[] { 10, 20 };
-        var input2 = new[] { 9, 4, 9 };
-        var input3 = new[] { 12, 3, 6, 4 };
+        int[] input1 = [10, 20];
+        int[] input2 = [9, 4, 9];
+        int[] input3 = [12, 3, 6, 4];
 
         var result = Kata.GetMaxAverage(input1, input2, input3);
 
@@ -24,9 +24,9 @@ public class KataTest
     {
         var input = new int[][]
         {
-            new[] { 1, 2, 3 },
-            new[] { 4, 5, 6 },
-            new[] { 7, 8, 9 }
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
         };
 
         var result = Kata.Flat(input);
@@ -37,8 +37,8 @@ public class KataTest
     [Fact]
     public void Should_Pass_OrderByMarkAndPrice()
     {
-        var cars = new[]
-        {
+        Car[] cars =
+        [
             new Car
             {
                 Mark = "Peugeot",
@@ -54,7 +54,7 @@ public class KataTest
                 Mark = "Peugeot",
                 Price = 900
             }
-        };
+        ];
 
         var result = Kata.OrderByMarkAndPrice(cars);
 
@@ -65,7 +65,7 @@ public class KataTest
     [Fact]
     public void Should_Pass_GetFrom4To6()
     {
-        var input = new[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+        string[] input = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
         var result = Kata.GetFrom4To6(input);
 
@@ -75,7 +75,7 @@ public class KataTest
     [Fact]
     public void Should_Pass_Inverse()
     {
-        var input = new[] { 1, 2, 3 };
+        int[] input = [1, 2, 3];
 
         var result = Kata.Inverse(input);
 
@@ -85,8 +85,8 @@ public class KataTest
     [Fact]
     public void Should_Pass_GetMergeAnalyses()
     {
-        var equities = new[]
-        {
+        Equity[] equities =
+        [
             new Equity
             {
                 Code = "GLE FP"
@@ -95,15 +95,15 @@ public class KataTest
             {
                 Code = "BNP FP"
             }
-        };
+        ];
 
-        var bonds = new[]
-        {
+        Bond[] bonds =
+        [
             new Bond
             {
                 Code = "GLE FP"
             }
-        };
+        ];
 
         var result = Kata.GetAnalyses(equities, bonds);
 
@@ -114,8 +114,8 @@ public class KataTest
     [Fact]
     public void Should_Pass_GetMaxPriceByMark()
     {
-        var cars = new[]
-        {
+        Car[] cars =
+        [
             new Car
             {
                 Mark = "Peugeot",
@@ -131,7 +131,7 @@ public class KataTest
                 Mark = "Peugeot",
                 Price = 1_500
             }
-        };
+        ];
 
         var result = Kata.GetMaxPriceByMark(cars);
 
@@ -142,7 +142,7 @@ public class KataTest
     [Fact]
     public void Should_Pass_GetDictionary()
     {
-        var input = new[] { "Red", "Green", "Red", "Red", "Orange", "Blue", "Green", "Orange", "Pink" };
+        string[] input = ["Red", "Green", "Red", "Red", "Orange", "Blue", "Green", "Orange", "Pink"];
 
         var result = Kata.GetDictionary(input);
 
